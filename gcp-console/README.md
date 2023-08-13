@@ -22,8 +22,7 @@ Follow these steps to create a GKE cluster using the GCP Console:
    - Click the "Create Cluster" button.
    - Configure cluster settings:
      - **Cluster Basics**: Provide a name for your cluster and select the desired region/zone.
-     - **Node Pools**: Configure the machine type, number of nodes, and other node pool settings.
-     - **Node Pool Advanced Edit**: Customize advanced settings like boot disk size, labels, and taints (if needed).
+     - **Networking(optional)**: Customize the default selection of network, subnet, and network access to desired.
    - Click "Create" to initiate cluster creation.
 
 4. **Monitor Cluster Creation**: The GCP Console will display the progress of cluster creation. You can also view cluster details, node status, and more.
@@ -40,7 +39,7 @@ Follow these steps to create a GKE cluster using the GCP Console:
 ## Additional Resources
 
 For more detailed information and advanced configurations, refer to the official Google Cloud documentation:
-- [Creating a GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster)
+- [Creating a GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-an-autopilot-cluster)
 - [GKE Cluster Concepts](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-architecture)
 
 ## Contributing

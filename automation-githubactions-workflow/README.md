@@ -7,7 +7,6 @@ This directory contains instructions and examples for creating Google Kubernetes
 Before you begin, ensure you have:
 
 - A Google Cloud Platform account.
-- Created a Kubernetes configuration file (`kubeconfig`) for authenticating with GKE.
 - Familiarity with basic Kubernetes concepts.
 - Basic knowledge of GitHub Actions.
 
@@ -21,7 +20,7 @@ Follow these steps to create a GKE cluster using GitHub Actions workflows:
 
 2. **Create GitHub Actions Workflow**:
    - Navigate to the `.github/workflows` directory in this repository.
-   - Edit or create a `.yml` file for your workflow. You can use the provided `create-gke-cluster.yml` as a starting point.
+   - Edit or create a `.yml` file for your workflow. You can use the provided `create-gke-cluster-workflow.yml` as a starting point.
 
 3. **Configure Workflow**:
    - Define your workflow by specifying the name, triggers, and steps.

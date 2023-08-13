@@ -42,23 +42,27 @@ Before you begin, ensure that you have:
 Navigate to the specific method's directory to find detailed instructions and examples for creating GKE clusters using that method.
 
 Directory structure:
-/
+```
 |-- gcp-console/
 | |-- README.md
-| |-- ...
 |-- gcloud-cli/
 | |-- README.md
-| |-- ...
 |-- iac-terraform/
 | |-- README.md
-| |-- ...
-|-- automation-GitHub Actions Worflow/
+| |-- main.tf
+| |-- backend.tf
+| |-- variables.tf
+| |-- versions.tf
+| |-- output.tf
+|-- automation-githubactions-workflow/
 | |-- README.md
-| |-- ...
+|-- .github/workflows
+| |-- create-gke-cluster-workflow.yaml
+| |-- delete-gke-cluster-workflow.yaml
 |-- LICENSE
 |-- CONTRIBUTING.md
 |-- ...
-
+```
 
 Each subdirectory contains its own README file with specific instructions and code examples.
 

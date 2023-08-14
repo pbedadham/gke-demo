@@ -34,8 +34,21 @@ Choose the method that best suits your workflow and familiarity with GCP service
 Before you begin, ensure that you have:
 
 - A Google Cloud Platform account.
+  - [Create GCP Account](https://cloud.google.com/free)
 - `gcloud` command-line tool installed (if applicable).
-- Knowledge of Kubernetes basics and GKE concepts.
+  - [gcloud CLI Installation](https://cloud.google.com/sdk/docs/install)
+- Google Cloud Authentication and Service Account Creation:
+  - [Google Cloud Authentication Overview](https://cloud.google.com/docs/authentication)
+  - [Creating and Managing Service Accounts](https://cloud.google.com/iam/docs/service-accounts-create)
+  - [Creating and Managing Service Account Keys](https://cloud.google.com/iam/docs/keys-create-delete)
+- GitHub Repository Secrets:
+  - [Creating Encrypted Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+- Basic Kubernetes Concepts:
+  - [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+- Basic Knowledge of Terraform:
+  - [Getting Started with Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code)
+- Basic Knowledge of GitHub Actions:
+  - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
 ## Usage
 

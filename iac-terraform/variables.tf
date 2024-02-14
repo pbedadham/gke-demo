@@ -14,6 +14,10 @@ variable "region" {
   description = "The region to host the cluster in"
   default     = "us-west1"
 }
+variable "kubernetes_version" {
+  description = "The Kubernetes version of the masters"
+  default     = "1.28.3-gke.1286000"
+}
 variable "network" {
   description = "The VPC network created to host the cluster in"
   default     = "gke-network"

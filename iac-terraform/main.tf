@@ -1,7 +1,7 @@
 
 module "gke_auth" {
   source = "terraform-google-modules/kubernetes-engine/google//modules/auth"
-  version = "24.1.0"
+  version = "30.0.0"
   depends_on   = [module.gke]
   project_id   = var.project_id
   location     = module.gke.location
@@ -15,7 +15,7 @@ resource "local_file" "kubeconfig" {
 
 module "gcp-network" {
   source       = "terraform-google-modules/network/google"
-  version      = "6.0.0"
+  version      = "9.0.0"
   project_id   = var.project_id
   network_name = "${var.network}-${var.env_name}"
 
@@ -51,11 +51,12 @@ provider "kubernetes" {
 
 module "gke" {
   source                 = "terraform-google-modules/kubernetes-engine/google//modules/private-cluster"
-  version                = "24.1.0"
+  version                = "30.0.0"
   project_id             = var.project_id
   name                   = "${var.cluster_name}-${var.env_name}"
   regional               = true
   region                 = var.region
+  kubernetes_version     = var.kubernetes_version
   network                = module.gcp-network.network_name
   subnetwork             = module.gcp-network.subnets_names[0]
   ip_range_pods          = var.ip_range_pods_name
